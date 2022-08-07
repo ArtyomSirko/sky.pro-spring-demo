@@ -1,4 +1,4 @@
-HELP.md
+ HELP.md
 target/
 .idea
 !.mvn/wrapper/maven-wrapper.jar
@@ -32,3 +32,4 @@ build/
 
 ### VS Code ###
 .vscode/
+/HELP.md

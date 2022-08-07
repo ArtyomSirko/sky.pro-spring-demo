@@ -9,7 +9,7 @@ public class CalculateServiceImpl implements CalculateService {
         return a + b;
     }
 
-    @Override
+     @Override
     public int minus(Integer a, Integer b) {
         return a - b;
     }

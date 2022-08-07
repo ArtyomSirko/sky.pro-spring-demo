@@ -1,4 +1,4 @@
-package pro.sky.sky.prospring.demo.CalculateService;
+ package pro.sky.sky.prospring.demo.CalculateService;
 
 public interface CalculateService {
     int plus(Integer a, Integer b);
