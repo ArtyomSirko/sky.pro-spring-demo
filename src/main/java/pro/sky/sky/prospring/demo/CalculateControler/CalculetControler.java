@@ -25,22 +25,22 @@ public class CalculetControler {
                        @RequestParam(name = "name2") Integer b) {
         int plus = calculateService.plus(a, b);
         return a+"+"+b+"="+plus;
-    } @GetMapping("/plus")
+    } @GetMapping("/minus")
     public String minus(@RequestParam(name = "name1") Integer a,
                        @RequestParam(name = "name2") Integer b) {
         int minus = calculateService.minus(a, b);
         return a+"+"+b+"="+minus;
-    } @GetMapping("/plus")
+    } @GetMapping("/multi")
     public String multi(@RequestParam(name = "name1") Integer a,
                        @RequestParam(name = "name2") Integer b) {
         int multi = calculateService.multi(a, b);
         return a+"+"+b+"="+multi;
-    } @GetMapping("/plus")
+    } @GetMapping("/divid")
     public String divide(@RequestParam(name = "name1") Integer a,
                        @RequestParam(name = "name2") Integer b) {
-        if (b ==0) {
-            return "На ноль делить нельзя";
-        }
+//        if (b ==0) {
+//            return "На ноль делить нельзя";
+//        }
         double divide = calculateService.divide(a, b);
         return a+"+"+b+"="+divide;
     }
