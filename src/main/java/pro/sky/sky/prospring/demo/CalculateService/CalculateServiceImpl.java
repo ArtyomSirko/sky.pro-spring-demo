@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculateServiceImpl implements CalculateService {
+
+
     @Override
     public int plus(Integer a, Integer b) {
         return a + b;
@@ -21,8 +23,11 @@ public class CalculateServiceImpl implements CalculateService {
 
     @Override
     public int divide(Integer a, Integer b) {
-
-    return a / b;
+        if (b == 0) {
+            throw new IllegalArgumentException("На ноль делить нельзя!");
+        }
+            return a / b;
+        }
     }
 
-}
+
